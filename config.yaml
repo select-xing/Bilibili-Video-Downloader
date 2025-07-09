@@ -1,0 +1,29 @@
+# 获取mp3和mp4的选项, True就获取, False则不获取
+get_mp3: True
+get_mp4: True
+# 如果在得到mp3和mp4的情况下, 将音视频合并, 这个需要配置好ffmpeg环境
+hebing: True
+# 合并完的情况下要不要删除原来的mp3和mp4
+delete_origin: True
+# 四种保存命名的方式, 在有合集的情况下
+# --1第一种是建立合集文件夹, 文件直接用子标题命名.
+# 初始文件夹/合集标题/视频标题.mp3
+# --2第二种是建立合集文件夹, 里面再建立子文件夹, 再保存result文件
+# /初始文件夹/合集标题/视频标题/result.mp3
+# --3第三种是不用合集文件夹, 文件直接用子标题命名
+# /初始文件夹/视频标题.mp3
+# --4第四种是, 直接在当前文件夹保存result文件
+# (不推荐这种, 因为所有文件都同名, 后面下载的不会覆盖前面下载的, 相当于只有第一个下载才有效)
+# /初始文件夹/result.mp3
+way_to_save: 1
+# 多下载模式和从当前视频往后面数的个数
+multi_download: False
+multi_sum: 1
+# 多下载模式下直接下完合集或视频选集的视频
+multi_down_all: False
+# 初始的文件夹名字, 要在最后加/
+dir_name: './bilibili/'
+# 下载完一个等待的时间, 秒, 怕爬太快被封ip了, 但实际上等待0秒也没事, 快不起来的
+wait_time: 3
+# 登录时候的cookie, 用来得到下载视频更高的清晰度, 可以忽略
+#cookie: 'buvid3=BAAD4239-FDD8-FA4B-5291-CBCC86E1F9FB52741infoc; b_nut=1692153552; i-wanna-go-back=-1; b_ut=7; _uuid=7AF105A27-4B15-DBE8-74DC-32510C84ED3EE62707infoc; buvid4=F1A70E2A-282E-8C64-1E64-825C0CEE8CEB53652-023081610-Pk1O31qDhl7PSu96AwN4L8k1iTzwkPb92r360C8P8yp8MErZn14MBg%3D%3D; rpdid=0zbfAHVYDm|2tGQqsCD|3Gd|3w1Qw6rW; DedeUserID=414419259; DedeUserID__ckMd5=494ad6cdce4e7393; header_theme_version=CLOSE; buvid_fp_plain=undefined; CURRENT_BLACKGAP=0; enable_web_push=DISABLE; FEED_LIVE_VERSION=V8; PVID=1; fingerprint=4d0807612856f17a864d6444d19180c8; LIVE_BUVID=AUTO5917159144479199; buvid_fp=4d0807612856f17a864d6444d19180c8; CURRENT_FNVAL=4048; hit-dyn-v2=1; b_lsid=245816DC_1900BFDB8BA; bmg_af_switch=1; bmg_src_def_domain=i1.hdslb.com; SESSDATA=3bb2ece6%2C1733740094%2C6f72e%2A62CjAH9EZlQ2K-7Z8nKi9p3pl-hTxnomiVtBwYA2HD7M0AIrJpc_q-r3oMza1hBY4FKHwSVi1qSVpGSVFLVjZlbTRhNnB5Zmc2cks2eGFBTXdaenc1UGFJaVhQQ0Q2SEFGQ2RGcllFckE0MUFGdWx6MWw3VnFyS01HN0tLaWFobks5Um1velh4UVpBIIEC; bili_jct=fdb0a5549264f0df1e84d08c4004a89f; bp_t_offset_414419259=942095424464879622; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTg0NDc0NzgsImlhdCI6MTcxODE4ODIxOCwicGx0IjotMX0.gHQqIiAe3P88yciagt94the2SIIkmQVm6puu8feZEkU; bili_ticket_expires=1718447418; sid=701dad89; CURRENT_QUALITY=16; home_feed_column=4; browser_resolution=559-804'
